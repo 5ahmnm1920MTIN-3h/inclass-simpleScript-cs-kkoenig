@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.UI;
 
 public class ComputeNumbers : MonoBehaviour
@@ -7,49 +9,28 @@ public class ComputeNumbers : MonoBehaviour
     public InputField ipVarB;
     public Text result;
 
-    float varA;
-    float varB;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        varA = 5;
-        varB = 4;
-        Debug.Log("in start: " + SubtractNumbers(varA, varB));
-        Debug.Log("in start: " + SubtractNumbers(4, 7));
-        Debug.Log(10 - SubtractNumbers(varA, varB));
-        Debug.Log(100 - SubtractNumbers(4, 7));
-        SetResult();
-    }
-
-    public void TestMethod()
-    {
-        Debug.Log("Test");
-    }
     public void SetResult()
     {
         float a = float.Parse(ipVarA.text);
         float b = float.Parse(ipVarB.text);
-        Debug.Log("in SetResult " + (a - b));
+        result.text = SubtractNumbers(a, b).ToString();
     }
 
-    public float SubtractNumbers(float variableA, float variableB)
+    private float SubtractNumbers(float variableA, float variableB)
     {
         float result = variableA - variableB;
-       // Debug.Log("Test sub" + result.ToString());
+        return result;
+    }
+    private float MultNumbers(float variableA, float variableB)
+    {
+        float result = variableA * variableB;
         return result;
     }
 
-    public float MultNumbers(float variableA, float variableB)
-    {
-        float result = variableA * variableB;
-        // Debug.Log("Test sub" + result.ToString());
-        return result;
-    }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }

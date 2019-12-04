@@ -151,7 +151,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ipVarA: {fileID: 285547694}
   ipVarB: {fileID: 959994682}
-  result: {fileID: 1953476924}
+  result: {fileID: 779664582}
 --- !u!4 &102078705
 Transform:
   m_ObjectHideFlags: 0
@@ -945,7 +945,7 @@ GameObject:
   - component: {fileID: 779664583}
   - component: {fileID: 779664582}
   m_Layer: 5
-  m_Name: Text_Eq
+  m_Name: Text_Result
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1447,7 +1447,7 @@ GameObject:
   - component: {fileID: 1953476925}
   - component: {fileID: 1953476924}
   m_Layer: 5
-  m_Name: Text_Result
+  m_Name: Text_Eq
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
