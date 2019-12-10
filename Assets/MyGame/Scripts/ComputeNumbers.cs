@@ -21,16 +21,4 @@ public class ComputeNumbers : MonoBehaviour
         float result = variableA - variableB;
         return result;
     }
-    private float MultNumbers(float variableA, float variableB)
-    {
-        float result = variableA * variableB;
-        return result;
-    }
-
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 }
